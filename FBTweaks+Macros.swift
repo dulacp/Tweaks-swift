@@ -147,7 +147,7 @@ func _tweakPackValue<T>(value: T) -> AnyObject? {
     
     // pack Boolean
     if let v = value as? Bool {
-        return NSValue(nonretainedObject: v)
+        return NSNumber(bool: v)
     }
     
     println("Warning: Unknown value type \(value.dynamicType) for value \(value), can't be packed")
