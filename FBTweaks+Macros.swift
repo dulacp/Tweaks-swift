@@ -16,7 +16,7 @@ func getTweakIdentifier(categoryName: String!, collectionName: String!, tweakNam
 }
 
 func tweakBind<T>(object: NSObject!, property: String!, categoryName: String!, collectionName: String!, tweakName: String!, defaultValue: T, minValue: T?, maxValue: T?) {
-    #if !FBTweakEnabled
+    #if NDEBUG
         let tweak = _tweakInternal(categoryName, collectionName, tweakName, defaultValue, nil, nil)
         object.setValue(_tweakValueInternal(tweak, defaultValue),
             forKey: property)
@@ -27,7 +27,7 @@ func tweakBind<T>(object: NSObject!, property: String!, categoryName: String!, c
 }
 
 func tweak<T>(categoryName: String!, collectionName: String!, tweakName: String!, defaultValue: T, minValue: T?, maxValue: T?) -> T {
-    #if !FBTweakEnabled
+    #if NDEBUG
         return defaultValue
     #else
         let tweak = _tweakInternal(categoryName, collectionName, tweakName, defaultValue, minValue, maxValue)
