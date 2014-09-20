@@ -15,6 +15,10 @@ func getTweakIdentifier(categoryName: String!, collectionName: String!, tweakNam
     return "FBTweak:\(categoryName)-\(collectionName)-\(tweakName)"
 }
 
+func tweakBind<T>(object: NSObject!, property: String!, categoryName: String!, collectionName: String!, tweakName: String!, defaultValue: T) {
+    tweakBind(object, property, categoryName, collectionName, tweakName, defaultValue, nil, nil)
+}
+
 func tweakBind<T>(object: NSObject!, property: String!, categoryName: String!, collectionName: String!, tweakName: String!, defaultValue: T, minValue: T?, maxValue: T?) {
     #if NDEBUG
         let tweak = _tweakInternal(categoryName, collectionName, tweakName, defaultValue, nil, nil)
