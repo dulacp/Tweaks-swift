@@ -5,8 +5,12 @@
 //  Copyright (c) 2014 Pierre Dulac. All rights reserved.
 //
 
-#ifndef ObjC_Briding_Header_h
-#define ObjC_Briding_Header_h
+// Usage:
+// Copy following content into your project Bridging-Header.h file
+
+// FBTweaks
+#ifndef Tweak_Swift_ObjC_Bridging_Header_h
+#define Tweak_Swift_ObjC_Bridging_Header_h
 
 #import "FBTweakEnabled.h"
 #import "FBTweak.h"
