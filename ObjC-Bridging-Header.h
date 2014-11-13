@@ -8,6 +8,7 @@
 // Usage:
 // Copy following content into your project Bridging-Header.h file
 
+// FBTweaks
 #ifndef Tweak_Swift_ObjC_Bridging_Header_h
 #define Tweak_Swift_ObjC_Bridging_Header_h
 
