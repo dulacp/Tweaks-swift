@@ -42,4 +42,4 @@ And you're good to go.
 [@dulaccc](https://twitter.com/dulaccc)
 
 ## License
-DPMeterView is available under the MIT license. See the LICENSE file for more info.
+Tweaks-swift is available under the MIT license. See the LICENSE file for more info.
